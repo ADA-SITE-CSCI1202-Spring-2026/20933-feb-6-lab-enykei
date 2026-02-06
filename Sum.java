@@ -3,16 +3,11 @@ import java.util.Scanner;
 public class Sum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Enter the first integer: ");
-        int firstNumber = scanner.nextInt();
-
+        int a = scanner.nextInt();
         System.out.print("Enter the second integer: ");
-        int secondNumber = scanner.nextInt();
-
-        int sum = firstNumber + secondNumber;
-        
-        System.out.println("The sum of " + firstNumber + " and " + secondNumber + " is: " + sum);
+        int b = scanner.nextInt();
+        System.out.printf("The sum of %d and %d is: %d%n", a, b, a + b);
         scanner.close();
     }
 }
